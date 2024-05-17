@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d card</title>
+   <link rel="stylesheet" href="taster.css">
+   <style>
+     *{
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+        }
+        .container{
+           width: 100%;
+           min-height: 100vh;
+           background:linear-gradient(135deg,#e3dbf6,#a99bf9);
+           padding: 10px;
+        }
+        .card{
+              width: 350px;
+              height: 515px;
+              margin: 100px auto 0;
+    
+        }
+        .inner_card{
+            height: 100%;
+            width: 100%;
+            position relative
+            
+        }
+        .front, .back{
+            height: 100%;
+            width: 100%;
+            border-radius: 15px;
+            /* box-sizing: border-box; */
+            /* position: absolute;  */
+        }
+         .front{
+            /* height: 100%;
+            width: 100%; */
+            background: url(img/user.png);
+            background-size: cover;
+            background-position: center;
+            padding: 60px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: rgb(246, 247, 248);
+         }
+        .front h2{
+            font-weight: 500;
+        }
+        .font p{
+            font-size: 13px;
+            color: #f5f4f4;
+        }
+        .front button{
+            width: 120px;
+            background: transparent;
+            border: 2px solid rgb(250, 245, 245);
+            border-radius: 50px;
+            padding: 8px 20px;
+            cursor: pointer;
+            color: rgb(238, 239, 238);
+            margin-top: 20px;
+        }
+        /* .back{
+            background: white;
+            color: #333;
+            padding: 20px 40px;
+            transform: translateY(180deg);
+
+        } */
+        .front button:hover{
+          /* background: rgba(238, 241, 238, 0.9); */
+          transition: 0.1s ease-in;
+         color: black;
+        }
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+           <div class="inner_card">
+            <div class="front">
+               <h2>KESHAB GURUNG</h2>
+               <P>frontend developer, india</P>
+               <button>hover me</button>
+            </div>
+            <!-- <div class="back">
+            <h1>James <span>Bond</span></h1>   
+           I am develper currently not working any other company
+            </div> -->
+           </div>
+        </div>
+</body>
+</html>
